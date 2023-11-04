@@ -22,13 +22,14 @@
   margin: 50px auto;
 }
 
-header.header {
+.main header.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
 }
 
-header .logo {
+.main header .logo {
   max-width: 60px;
   width: 100%;
 }
@@ -46,4 +47,41 @@ nav.nav .nav-items {
 .nav-items .item:hover {
   cursor: pointer;
   color: var(--c-softRed);
+}
+
+.main .new-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-items .new-item {
+  display: flex;
+  gap: 25px;
+}
+
+.new-item .new-item-img {
+  max-width: 120px;
+  width: 100%;
+}
+
+.new-item .new-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.new-item-content .new-item-title {
+  font-weight: 600;
+  color: var(--c-grayishBlue);
+  font-size: 35px;
+}
+
+.new-item .new-item-subtitle {
+  color: var(--c-veryDarkBlue);
+  font-size: 20px;
+}
+
+.new-item .new-item-description {
+  color: var(--c-darkGrayishBlue);
+  font-size: 16px;
 }
