@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --c-softOrange: hsl(35, 77%, 62%);
+  --c-softRed: hsl(5, 85%, 63%);
+  --c-white: hsl(36, 100%, 99%);
+  --c-grayishBlue: hsl(233, 8%, 79%);
+  --c-darkGrayishBlue: hsl(236, 13%, 42%);
+  --c-veryDarkBlue: hsl(240, 100%, 5%);
+}
+
+.main {
+  max-width: 1440px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  max-width: 60px;
+  width: 100%;
+}
+
+nav.nav .nav-items {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-items .item {
+  list-style-type: none;
+  color: var(--c-darkGrayishBlue);
+}
+
+.nav-items .item:hover {
+  cursor: pointer;
+  color: var(--c-softRed);
+}
