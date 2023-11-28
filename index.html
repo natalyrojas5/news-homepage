@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>New Home</title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="./styles.css">
 
   <link
@@ -14,11 +15,10 @@
 </head>
 
 <body>
-  <main class="main">
-    <!-- Header -->
+  <main id="main" class="main">
     <header class="header">
       <img src="./icons/logo.svg" alt="Logo W" class="logo">
-      <nav class="nav">
+      <nav id="nav" class="nav">
         <ul class="nav-items">
           <li class="item">Home</li>
           <li class="item">New</li>
@@ -27,23 +27,24 @@
           <li class="item">Categories</li>
         </ul>
       </nav>
+      <img role="button" id="menu-opend" class="menu-open menu-icon" src="./icons/icon-menu.svg" />
     </header>
 
     <section class="new-container">
-      <aside class="new-main">
+      <aside class="new-main" id="home">
         <img class="new-main-img" src="./img/web-3-desktop.jpg" alt="Web 3">
         <div class="new-main-info">
-          <h2 class="new-main-title">The Bright Future of Web 3.0?</h2>
-          <div>
+          <h2 class="new-main-title" id="new">The Bright Future of Web 3.0?</h2>
+          <div id="popular">
             <p class="new-main-description">We dive into the next evolution of the web that claims to put the power of
               the platforms back into the
               hands of the
               people. But is it really fulfilling its promise?</p>
-            <button class="new-main-btn">read button</button>
+            <button class="new-main-btn">READ MORE</button>
           </div>
         </div>
       </aside>
-      <aside class="new-list">
+      <aside class="new-list" id="tendring">
         <h2 class="new-list-title">New</h2>
         <div class="new-list-item">
           <h3 class="title">Hydrogen VS Electric Cars</h3>
@@ -62,13 +63,12 @@
       </aside>
     </section>
 
-    <!-- Section New Items -->
-    <section class="new-items">
+    <section class="new-items" id="categories">
       <article class="new-item">
         <img src="./img/retro-pcs.jpg" alt="Retro Pcs" class="new-item-img">
         <div class="new-item-content">
           <h2 class="new-item-title">01</h2>
-          <h3 class="new-item-subtitle">Reviving Retro PCs</h3>
+          <h3 class="new-item-subtitle" role="button">Reviving Retro PCs</h3>
           <p class="new-item-description">What happens when old PCs are given modern upgrades?</p>
         </div>
       </article>
@@ -76,7 +76,7 @@
         <img src="./img/top-laptops.jpg" alt="Top Laptops" class="new-item-img">
         <div class="new-item-content">
           <h2 class="new-item-title">02</h2>
-          <h3 class="new-item-subtitle">Top 10 Laptops of 2022</h3>
+          <h3 class="new-item-subtitle" role="button">Top 10 Laptops of 2022</h3>
           <p class="new-item-description">Our best picks for various needs and budgets.</p>
         </div>
       </article>
@@ -90,6 +90,17 @@
       </article>
     </section>
   </main>
+
+  <nav id="nav-mobile" class="nav nav-mobile nav-hidden">
+    <ul class="nav-items">
+      <img role="button" id="menu-closed" class="menu-opend menu-icon" src="./icons/icon-menu-close.svg" />
+      <li class="item" role="button">Home</li>
+      <li class="item" role="button">New</li>
+      <li class="item" role="button">Popular</li>
+      <li class="item" role="button">Trending</li>
+      <li class="item" role="button">Categories</li>
+    </ul>
+  </nav>
 
 </body>
 
