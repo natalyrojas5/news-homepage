@@ -102,17 +102,18 @@ nav.nav .nav-items {
     min-height: 114vh;
   }
 
-  .nav-mobile .nav-items {
+  .nav-mobile .nav-mobile-menu {
     background-color: var(--c-white);
-
-    flex-direction: column;
-    align-items: flex-start;
-
     font-size: 1.6rem;
 
     width: 100%;
     max-width: 18.75rem;
     padding: 2.5rem;
+  }
+
+  .nav-mobile .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-mobile .menu-opend {
